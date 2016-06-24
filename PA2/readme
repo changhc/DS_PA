@@ -1,0 +1,20 @@
+Student ID：b02901032
+Name：張桓誠
+Phone No.: 0920886882
+Dev environment：Linux 4.4.5-1-ARCH
+Compiler: gcc v5.3.0
+Files included:
+	Makefile: makefile
+	PA2.h: all functions and struct definition
+	PA2.cpp: main
+	pa2: executable file
+	inner-x-y.txt: points inside the region with inputx.txt and polygony.txt
+	outer-x-y.txt: points outside the region with inputx.txt and polygony.txt
+
+How to compile:
+	run "make" in the terminal.
+
+How to run:
+	run "make run" in the terminal.
+
+	*note: In my program, if a point is on the edge of the outer polygon or the inner polygons, it's counted as INSIDE the region.

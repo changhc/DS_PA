@@ -1,0 +1,31 @@
+Student ID：b02901032
+Name：張桓誠
+Phone No.: 0920886882
+Dev environment：Linux 4.4.5-1-ARCH
+Compiler: gcc v5.3.0
+Files included:
+	Makefile: makefile
+	main.h: all functions and struct definition
+	p2.cpp: program for problem 2 (different input size)
+	p3.cpp: program for problem 3 (execute range search and nearest neighbor search)
+	p4.cpp: program for problem 4 (rewrite p3 using red-black tree)
+	p2, p3, p4: executable files for each problem
+	gen.cpp: generate random input for p2
+	gen: executable file of gen.cpp
+	P2_result.txt: result of p2
+	P3_result_<input_name>: result of p3 with input <input_name>
+	P4_result_<input_name>: result of p4 with input <input_name>
+
+How to compile:
+	run "make" in the terminal.
+
+How to run:
+	For problem 1, deletion is included in main.h, but not used in these programs.
+	p2: run "make run" in the terminal
+	p3: run "./p3 <input> <ax1> <ay1> <bx1> <by1> <bx2> <by2>"
+	p4: run "./p4 <input> <ax1> <ay1> <bx1> <by1> <bx2> <by2>"
+		<input>: input file name
+		<ax1>, <ay1>: the x, y coordinate of a point (ax1, ay1) whose nearest neighbor is to be returned.
+		<bx1>, <by1>, <bx2>, <by2>: the x, y coordinate of two points (bx1, by1), (bx2, by2) that determines the rectangle for range search. The four pivots of the rectangle are (bx1, by1), (bx1, by2), (bx2, by1), (bx2, by2).
+		
+		*input is required. If ax1 and ay1 are not given, the program uses (0.5, 0.5). If bx1, by1, bx2, by2 are not given, the program uses (0.3, 0.3), (0.6, 0.41).
