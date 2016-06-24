@@ -10,6 +10,7 @@ Files included:
 	pa2: executable file
 	inner-x-y.txt: points inside the region with inputx.txt and polygony.txt
 	outer-x-y.txt: points outside the region with inputx.txt and polygony.txt
+	readme: readme
 
 How to compile:
 	run "make" in the terminal.
